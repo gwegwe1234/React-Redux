@@ -49,7 +49,7 @@ class App extends Component {
 		
 		this.videoSearch('김유진');
 	}
-	console.log(this.state);
+
 	videoSearch(term) {
 		YTSearch({key: API_KEY, term :term }, (videos) => {
 			this.setState({ 
